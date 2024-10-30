@@ -1,0 +1,354 @@
+* {
+    text-decoration: none;
+    border: none;
+}
+
+body {
+    margin: 0 auto;
+    top: 0;
+    overflow-y: hidden;
+    min-height: 100vh;
+    width: 100%;
+    background: url(../assets/images/background-sign-login.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+a {
+    font-weight: 500;
+    color: var(--light-purple);
+    font-size: var(--base);
+}
+
+input {
+    margin: 0 auto;
+    position: relative;
+    align-items: center;
+    justify-self: center;
+    width: 100%;
+    text-align: center;
+    border-radius: 0.7rem;
+    padding: 0.5rem;
+}
+
+h2 {
+    color: var(--light-purple);
+    overflow-y: hidden;
+    font-size: var(--4xl);
+    font-weight: 1000;
+    letter-spacing: -0.1rem;
+    font-family: roboto;
+}
+
+.container {
+    display: flex;
+    color: var(--white);
+    text-wrap: wrap;
+    overflow-y: hidden !important;
+    justify-content: center;
+    /* height: 80vh !important; */
+}
+
+@media screen and (min-width:768px) {
+    .container{
+        height: 80vh !important;
+    }
+}
+
+.login-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 0 auto;
+    background-color: transparent;
+    width: 35%;
+    margin-left: 65%;
+}
+
+
+.logo-login {
+    display: none;
+}
+
+.login-title {
+    overflow-y: hidden;
+    min-height: 50px;
+}
+
+.login-form {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+
+}
+
+.input {
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    flex-direction: column;
+    overflow: hidden;
+    width: 80%;
+}
+
+.btn {
+    margin: 0 auto;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    overflow-y: hidden;
+    border: 2px solid var(--yellow);
+    font-family: roboto;
+    font-weight: 1000;
+    background: var(--yellow);
+    color: var(--purple);
+    transition: 0.5s;
+    height: 35px;
+}
+
+.btn-submit {
+    width: 150px;
+    height: 2.7rem;
+}
+
+.btn-submit input {
+    margin: 0 auto;
+}
+
+.btn:hover {
+    color: var(--yellow);
+    border: 0.2rem solid var(--yellow);
+    background-color: var(--purple);
+}
+
+.btn-submit .input input {
+    overflow-y: hidden;
+}
+
+.login-page-btn {
+    margin: 0 auto;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    min-height: 20px;
+    max-height: 50px;
+}
+
+.login-page-btn a {
+    transition: 0.5s;
+    overflow-y: hidden;
+}
+
+.login-page-btn a:hover {
+    color: var(--cyan);
+}
+
+
+
+/* xxs */
+@media (max-width: 474px) {
+
+
+
+    body{
+        background: url(../assets/images/side-wave_background-to-phones.jpg);
+        background-position: right;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+
+    a,
+    input {
+        font-size: var(--sm);
+    }
+
+    h2 {
+        color: var(--dark-purple);
+        text-shadow: 2px 2px 2px var(--whi);
+        font-size: var(--lg);
+    }
+
+    input {
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+
+    .logo-login {
+        display: block;
+    }
+
+    .login-page {
+        margin: 0 auto;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        display: flex;
+        width: 80vw;
+    }
+
+    .btn {
+        color: var(--purple);
+        background-color: var(--yellow);
+        border: 0.15rem solid var(--yellow);
+    }
+
+    .btn:hover {
+        color: var(--yellow);
+        background-color: var(--purple);
+    }
+
+    .btn-submit {
+        height: 2.55rem;
+    }
+
+    .sign-in-page-btn {
+        margin: 0 auto;
+        position: relative;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .sign-in-page-btn a{
+        margin: 0 auto;
+        position: relative;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--dark-purple);
+        font-weight: 1000;
+        height: 50px;
+    }
+    
+}
+
+
+/* xs */
+@media (min-width: 475px) {
+
+    a,
+    input {
+        font-size: var(--base);
+    }
+
+    input {
+        min-height: 20px;
+    }
+
+
+    h2 {
+        font-size: var(--lg);
+    }
+
+}
+
+/* sm */
+@media (min-width: 640px) {
+
+    a,
+    input {
+        font-size: var(--lg);
+    }
+
+    input {
+        min-height: 20px;
+    }
+
+
+    h2 {
+        font-size: var(--xl);
+    }
+
+    .login a {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        min-height: 50px;
+        font-size: var(--xl);
+    }
+
+
+}
+
+/* md */
+@media (min-width: 768px) {
+
+    a,
+    input {
+        font-size: var(--xl);
+    }
+
+    input {
+        min-height: 20px;
+    }
+
+
+    h2 {
+        font-size: var(--2xl);
+    }
+
+    
+    .logo-login {
+        display: none;
+    }
+
+    .btn {
+        height: 5rem;
+    }
+
+}
+
+/* lg */
+@media (min-width: 1024px) {
+
+    a,
+    input {
+        font-size: var(--base);
+    }
+
+
+    h2 {
+        font-size: var(--2xl);
+    }
+
+
+    .logo-login {
+        display: none;
+    }
+
+
+
+}
+
+/* xl */
+@media (min-width: 1280px) {
+
+    
+    .logo-login {
+        display: none;
+    }
+}
+
+/* 2xl */
+@media (min-width: 1536px) {
+
+    .logo-login {
+        display: none;
+    }
+}

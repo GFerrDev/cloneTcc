@@ -1,0 +1,135 @@
+@charset "utf-8";
+
+:root {
+
+    --card: var(--dark-purple);
+    --span: var(--white);
+    --p: var(--purple);
+    --text: var(--white);
+    --background-profile: var(--darker-purple);
+    --background-change-password: var(--dark-gray);
+
+}
+
+*,
+span,
+h2,
+h3 {
+    color: #fff;
+}
+
+body {
+    min-height: 100vh;
+    background-color: var(--light-purple);
+
+}
+
+header {
+    z-index: 8;
+}
+
+.section {
+    min-height: 50vh;
+    padding: 5rem;
+}
+
+.logo-profile {
+    display: none;
+}
+
+.profile-card {
+    background: var(--background-profile);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 500px;
+    width: 95vw;
+    padding: 30px;
+    gap: 20px;
+    border-radius: 40px;
+    color: #fff;
+}
+
+.profile-picture img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 0.15rem solid var(--yellow);
+}
+
+.profile-picture img:hover {
+    cursor: pointer;
+    opacity: 0.5;
+    transition: 0.2s;
+}
+
+form{
+    display: none;
+    /* display: flex; */
+}
+
+.profile-picture svg{
+    transform: translate(-25px);
+}
+
+.custom-file-upload, .btn {
+    font-weight: 900;
+    display: inline-block;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: var(--yellow);
+    color: var(--background-profile);
+    border: var(--background-profile) 2px solid;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+    transition: 0.5s ease;
+}
+
+.custom-file-upload:hover, .btn:hover {
+    background-color: var(--background-profile);
+    color: var(--yellow);
+    border: var(--yellow) 2px solid;
+}
+
+#upload {
+    color: var(--yellow);
+    border: var(--yellow) 2px solid;
+    background-color: var(--darker-purple);
+}
+
+#upload:hover {
+    color: var(--darker-purple);
+    border: var(--yellow) 2px solid;
+    background-color: var(--yellow);
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.openMenu form{
+    display: flex;
+}
+
+.profile-text {
+    display: flex;
+    flex-direction: column;
+    gap: 12.5px;
+}
+
+/* md */
+@media (max-width: 768px) {
+
+    .logo-profile {
+        display: flex;
+    }
+
+    .logo-sign-in {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+}

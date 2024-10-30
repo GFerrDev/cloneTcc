@@ -1,0 +1,23 @@
+body{
+    background: var(--background);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.profile-card {
+
+    margin-top: 20vh;
+    background: var(--purple);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    padding: 30px;
+    gap: 20px;
+    color: #fff;
+}
+
+.profile-card h2, .profile-card p  {
+    color: var(--white);
+}
